@@ -21,11 +21,8 @@ def get_headers(rest_headers):
 # local site
 #  	host = "http://localhost"
 
-# testing site
-# 	host = "http://testviatext.myevolve.com"
 
-# production site
- 	host = "http://viatext.myevolve.com"
+
 
 	try:
 		Key = rest_headers['Key']
@@ -131,13 +128,9 @@ def establish_connection():
 	try:
 		
 # 		localhost
-#  		mysqldbconnection = MySQLdb.connect('localhost', 'mangocoders', '53cr3t', 'mob_ecommerce', use_unicode=True, charset="utf8", init_command='SET NAMES UTF8')
+#  		mysqldbconnection = MySQLdb.connect('localhost', 'test', 'test', 'test', use_unicode=True, charset="utf8", init_command='SET NAMES UTF8')
 
-			# testing site
-#  		mysqldbconnection = MySQLdb.connect('localhost', 'root', '53cr3t@Viatext', 'test_viatext', use_unicode=True, charset="utf8", init_command='SET NAMES UTF8')
 			
-			# production site
- 		mysqldbconnection = MySQLdb.connect('localhost', 'root', '53cr3t@Viatext', 'mob_ecommerce', use_unicode=True, charset="utf8", init_command='SET NAMES UTF8')
 		
 		Connections(mysqldbconnection)
 	
